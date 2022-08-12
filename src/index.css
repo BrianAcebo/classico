@@ -1,3 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  h1,h2,h3,h4,h5,h6 {
+    @apply font-heading;
+  }
+
+  a, p, input, span, div, textarea, button {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .smooth-transition {
+    @apply transition-all duration-200 ease-linear;
+  }
+
+  .side-nav-link {
+    @apply mx-5 text-gray-400 font-heading text-5xl lg:text-8xl relative before:transition-all before:duration-100 before:ease-linear before:absolute before:top-0 before:left-0 before:overflow-hidden before:px-0 before:max-h-0 before:text-white before:content-[attr(data-hover)] hover:before:max-h-full;
+  }
+
+  .section-container {
+    @apply py-24 lg:py-32 w-full border-b-[1px] border-gray-500;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +40,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
 }
