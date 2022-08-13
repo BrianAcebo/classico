@@ -15,6 +15,10 @@ export const MainNav = () => {
         }
     }
 
+    const handleClick = () => {
+        setOpenSideNav(false);
+    }
+
     return (
         <>
         <div className="z-30 w-full flex flex-row m-0 fixed border-b-[1px] border-white">
@@ -34,7 +38,7 @@ export const MainNav = () => {
 
         <div className="z-10 lg:top-0 top-[50px] w-[25px] lg:w-[12%] h-screen fixed border-r-[1px] border-white"></div>
 
-        <SideNav openSideNav={openSideNav} />
+        <SideNav onlinkClick={handleClick} openSideNav={openSideNav} />
         </>
     );
 }
