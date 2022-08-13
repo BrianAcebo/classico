@@ -13,7 +13,7 @@ export const Hero = (props) => {
                 <h1 className="text-white text-7xl lg:text-8xl mb-10">{headerText}</h1>
                 <p className="text-white text-lg lg:text-2xl font-normal mb-10">{bodyText}</p>
                 
-                <div className="flex flex-row">
+                <div className="flex flex-col md:flex-row">
                     <PrimaryCtaBtn link="/reserve">{primaryCtaText}</PrimaryCtaBtn>
                     <SecondaryCtaBtn link="/showcase">{secondaryCtaText}</SecondaryCtaBtn>
                 </div>

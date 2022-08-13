@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="main-content-container w-full border-t-[1px] border-white py-10 flex flex-col md:flex-row">
             <div className="w-full md:w-1/4 mb-10 md:mb-0">
                 <Logo />
-                <p className="text-white text-sm font-normal mt-5">Book some of the world's most classic makes and models to be your ride for a day.</p>
+                <p className="text-white text-sm font-normal mt-5">Book some of the world's most classic makes and models to be your ride for the day.</p>
             </div>
 
             <div className="w-full md:w-3/4 pl-0 md:pl-32 mb-10">
